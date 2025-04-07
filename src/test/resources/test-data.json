@@ -28,4 +28,9 @@
   "item6": {
     "name": "Test.allTheThings() T-Shirt (Red)",
     "Price": "$15.99 "
-  }}}
+  }},
+"Check-out-Page": {
+  "first-name": "John",
+  "last-name": "Doe",
+  "postal-code": "12345"
+}}

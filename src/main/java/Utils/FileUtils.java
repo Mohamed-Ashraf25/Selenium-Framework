@@ -1,7 +1,6 @@
 package Utils;
-
 import java.io.File;
-import java.io.IOException;
+import java.nio.file.Files;
 import java.util.Collection;
 
 public class FileUtils {
@@ -33,33 +32,34 @@ public class FileUtils {
     }
 
 
-
     public static void DeleteFiles(File FilePath) {
 
-        if (FilePath==null || !FilePath.exists()) {
+        if (FilePath == null || !FilePath.exists()) {
             LogsUtils.Error("File does not exist: ", FilePath.getAbsolutePath());
             return;
         }
-        File[] filelist= FilePath.listFiles();
-        if(filelist==null){
+        File[] filelist = FilePath.listFiles();
+        if (filelist == null) {
             LogsUtils.Error("File list is null: ", FilePath.getAbsolutePath());
             return;
 
         }
-        for ( File file : filelist) {
+        for (File file : filelist) {
             if (file.isDirectory()) {
                 DeleteFiles(file);
-            } else { try {
+            } else {
+                try {
+                    Files.delete(file.toPath());
+//file.delete( );
+                    LogsUtils.Info("File deleted successfully: ", file.getAbsolutePath());
 
-               file.delete();
-                LogsUtils.Info("File deleted successfully: ", file.getAbsolutePath());
-
-            }catch (  SecurityException e) {
-                LogsUtils.Error("Error deleting file: ",e.getMessage());
+                } catch (Exception e) {
+                    LogsUtils.Error("Error deleting file: ", e.getMessage());
+                }
             }
-        }
 
-}}
+        }
+    }
 
     public static Collection<File> ListFiles(File file, String[] strings, boolean b) {
         if (file.isDirectory()) {
@@ -70,4 +70,8 @@ public class FileUtils {
         }
 
     }
-    }
+
+
+
+
+}

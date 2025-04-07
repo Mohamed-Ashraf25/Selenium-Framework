@@ -37,7 +37,6 @@ public class BrowserFactory {
                 }
                 Chomeoptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 return new ChromeDriver(Chomeoptions);
-
             case "firefox":
                 FirefoxOptions Fireoptions = new FirefoxOptions();
                 Fireoptions.addArguments("--remote-allow-origins=*");
@@ -47,12 +46,6 @@ public class BrowserFactory {
                 Fireoptions.addArguments("--disable-gpu");
                 Fireoptions.addArguments("--no-sandbox");
                 Fireoptions.addArguments("--disable-dev-shm-usage");
-                // options.addArguments("--headless");
-                Map< String, Object> prefs2 = Map.of(
-                        "profile.default_content_setting_values.notifications", false,
-                        "Credential_enable_service", false,
-                        "profile.password_manager_enabled", false,
-                        "autofill.profile_enabled", false);
 
                 if ( !PropertiesUtils.getProperty("ExecutionType").equalsIgnoreCase("local")) {
                     Fireoptions.addArguments("--headless");

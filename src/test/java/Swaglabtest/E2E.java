@@ -5,42 +5,36 @@ import Pages.loginPage;
 import Utils.*;
 import Listeners.TestngListener;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
-import java.io.File;
+import org.testng.annotations.*;
 
 
 @Listeners(TestngListener.class)
 public class E2E {
-    File Allure_Results = new File("test-outputs/allure-results");
-    File Logs_Results = new File("test-outputs/logs");
+    private static JsonUtils testdata;
     private static WebDriver driver;
 
 
-    private static JsonUtils testdata;
-    //    String Allure_Results = "test-outputs/allure-results";
-    String LOgs_Results = "test-outputs/logs";
-    @BeforeTest
+    //
+    @BeforeSuite
     public  void setUp() {
-        PropertiesUtils.loadProperties();
-        FileUtils.DeleteFiles(Allure_Results);
-        FileUtils.DeleteFiles( Logs_Results);
-        String BrowserName = PropertiesUtils.getProperty("BrowserType");
-        testdata= new JsonUtils("test-data");
-        driver = DriverManager.Create_Instance(BrowserName);
-        driver.get("https://www.saucedemo.com/");
-        driver.manage().window().maximize();
-        LogsUtils.Info( "Browser launched successfully");
 
+        LogsUtils.Info( "Browser launched successfully");
+        testdata= new JsonUtils("test-data");
+        String BrowserName = Utils.PropertiesUtils.getProperty("BrowserType");
+        driver = DriverManager.Create_Instance(BrowserName);
+        driver.manage().window().maximize();
+        driver.get("https://www.saucedemo.com/");
     }
-    @Test
+    @Test(priority = 1)
     public static void SuccessfullLogin(){
         new loginPage(driver).enterUsername(testdata.getJasonData("login-Credenional.username"))
-                .enterPassword(testdata.getJasonData("login-Credenional.password")).clickLoginButton();
+                .enterPassword(testdata.getJasonData("login-Credenional.password")).clickLoginButton().
+                AddToCart().ClickCart().ClickonCheckOutBtn().
+                EnterFirstName(testdata.getJasonData("Check-out-Page.first-name"))
+                .EnterLastName(testdata.getJasonData("Check-out-Page.last-name")).
+                EnterPostalCode(testdata.getJasonData("Check-out-Page.postal-code")).ClickonContinueBtn().
+                clickFinish().VerifyThanksMsg();
 
-        ScreenshotUtils.Takescreenshot("LoginPage Successfully");
     }
 
     @AfterSuite
@@ -49,6 +43,4 @@ public class E2E {
 //            driver.quit();
 //        }
     }
-
-
 }
