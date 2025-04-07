@@ -1,0 +1,50 @@
+[ERROR] - [2025-04-07 11:24:39] [main] [Utils.FileUtils]- Directory does not exist or is not a directory: test-output/logs/
+[ERROR] - [2025-04-07 11:24:39] [main] [Utils.AllureUtils]- Failed to attach log file to Allure report: Cannot invoke "java.io.File.exists()" because "logfile" is null
+[ERROR] - [2025-04-07 11:24:39] [main] [Utils.AllureUtils]- Failed to attach screenshot to Allure report: test-outputs\screenshots\TestExecution.png
+[INFO] - [2025-04-07 11:24:39] [main] [Listeners.TestngListener]- Test Execution started
+[INFO] - [2025-04-07 11:24:39] [main] [Utils.PropertiesUtils]- Properties loaded successfully from: [src\main\resources\allure.properties, src\main\resources\Environment.properties, src\main\resources\log4j2.properties, src\main\resources\web.properties]
+[INFO] - [2025-04-07 11:24:39] [main] [Listeners.TestngListener]- Properties loaded successfully
+[ERROR] - [2025-04-07 11:24:39] [main] [Utils.FileUtils]- Directory does not exist or is not a directory: test-output/logs/
+[ERROR] - [2025-04-07 11:24:39] [main] [Utils.AllureUtils]- Failed to attach log file to Allure report: Cannot invoke "java.io.File.exists()" because "logfile" is null
+[ERROR] - [2025-04-07 11:24:39] [main] [Utils.AllureUtils]- Failed to attach screenshot to Allure report: test-outputs\screenshots\TestExecution.png
+[INFO] - [2025-04-07 11:24:39] [main] [Listeners.TestngListener]- Test Execution started
+[ERROR] - [2025-04-07 11:24:39] [main] [Utils.FileUtils]- Directory does not exist or is not a directory: test-output/logs/
+[ERROR] - [2025-04-07 11:24:39] [main] [Utils.AllureUtils]- Failed to attach log file to Allure report: Cannot invoke "java.io.File.exists()" because "logfile" is null
+[INFO] - [2025-04-07 11:24:39] [main] [Utils.PropertiesUtils]- Properties loaded successfully from: [src\main\resources\allure.properties, src\main\resources\Environment.properties, src\main\resources\log4j2.properties, src\main\resources\web.properties]
+[INFO] - [2025-04-07 11:24:39] [main] [Utils.FileUtils]- File deleted successfully: C:\Users\infop\IdeaProjects\SwagLab\test-outputs\logs\log_2025-04-07T11-19-49.log
+[INFO] - [2025-04-07 11:24:39] [main] [Utils.FileUtils]- File deleted successfully: C:\Users\infop\IdeaProjects\SwagLab\test-outputs\logs\log_2025-04-07T11-24-39.log
+[ERROR] - [2025-04-07 11:24:39] [main] [Utils.JsonUtils]- Error in reading JSON filesrc\test\resources (Access is denied)
+[INFO] - [2025-04-07 11:24:42] [main] [Swaglabtest.E2E]- Browser launched successfully
+[ERROR] - [2025-04-07 11:24:42] [main] [Utils.FileUtils]- Directory does not exist or is not a directory: test-output/logs/
+[ERROR] - [2025-04-07 11:24:42] [main] [Utils.AllureUtils]- Failed to attach log file to Allure report: Cannot invoke "java.io.File.exists()" because "logfile" is null
+[ERROR] - [2025-04-07 11:24:42] [main] [Utils.AllureUtils]- Failed to attach screenshot to Allure report: test-outputs\screenshots\TestExecution.png
+[INFO] - [2025-04-07 11:24:42] [main] [Listeners.TestngListener]- Test Execution started
+[ERROR] - [2025-04-07 11:24:42] [main] [Utils.FileUtils]- Directory does not exist or is not a directory: test-output/logs/
+[ERROR] - [2025-04-07 11:24:42] [main] [Utils.AllureUtils]- Failed to attach log file to Allure report: Cannot invoke "java.io.File.exists()" because "logfile" is null
+[INFO] - [2025-04-07 11:24:42] [main] [Pages.loginPage]- Entering username: standard_user
+[INFO] - [2025-04-07 11:24:42] [main] [Utils.Waits]- Element is present: By.id: user-name
+[INFO] - [2025-04-07 11:24:42] [main] [Utils.Waits]- Element is visible: By.id: user-name
+[INFO] - [2025-04-07 11:24:42] [main] [Utils.Scrolling]- Scrolling down to element: By.id: user-name
+[INFO] - [2025-04-07 11:24:43] [main] [Utils.ElementActions]- Data Entered: standard_user in element: By.id: user-name
+[INFO] - [2025-04-07 11:24:43] [main] [Pages.loginPage]- Entering password: secret_sauce
+[INFO] - [2025-04-07 11:24:43] [main] [Utils.Waits]- Element is present: By.id: password
+[INFO] - [2025-04-07 11:24:43] [main] [Utils.Waits]- Element is visible: By.id: password
+[INFO] - [2025-04-07 11:24:43] [main] [Utils.Scrolling]- Scrolling down to element: By.id: password
+[INFO] - [2025-04-07 11:24:43] [main] [Utils.ElementActions]- Data Entered: secret_sauce in element: By.id: password
+[INFO] - [2025-04-07 11:24:43] [main] [Pages.loginPage]- Clicking on the login button
+[INFO] - [2025-04-07 11:24:43] [main] [Utils.Waits]- Element is present: By.id: login-button
+[INFO] - [2025-04-07 11:24:43] [main] [Utils.Waits]- Element is visible: By.id: login-button
+[INFO] - [2025-04-07 11:24:43] [main] [Utils.Waits]- Element is clickable: By.id: login-button
+[INFO] - [2025-04-07 11:24:43] [main] [Utils.Scrolling]- Scrolling down to element: By.id: login-button
+[INFO] - [2025-04-07 11:24:43] [main] [Utils.ElementActions]- Clicked on element: By.id: login-button
+[ERROR] - [2025-04-07 11:24:43] [main] [Utils.FileUtils]- Directory does not exist or is not a directory: test-output/logs/
+[ERROR] - [2025-04-07 11:24:43] [main] [Utils.AllureUtils]- Failed to attach log file to Allure report: Cannot invoke "java.io.File.exists()" because "logfile" is null
+[ERROR] - [2025-04-07 11:24:43] [main] [Utils.FileUtils]- Directory does not exist or is not a directory: test-output/logs/
+[ERROR] - [2025-04-07 11:24:43] [main] [Utils.AllureUtils]- Failed to attach log file to Allure report: Cannot invoke "java.io.File.exists()" because "logfile" is null
+[ERROR] - [2025-04-07 11:24:43] [main] [Utils.AllureUtils]- Failed to attach screenshot to Allure report: test-outputs\screenshots\TestExecution.png
+[INFO] - [2025-04-07 11:24:43] [main] [Listeners.TestngListener]- Test Execution started
+[ERROR] - [2025-04-07 11:24:43] [main] [Utils.FileUtils]- Directory does not exist or is not a directory: test-output/logs/
+[ERROR] - [2025-04-07 11:24:43] [main] [Utils.AllureUtils]- Failed to attach log file to Allure report: Cannot invoke "java.io.File.exists()" because "logfile" is null
+[ERROR] - [2025-04-07 11:24:43] [main] [Utils.FileUtils]- Directory does not exist or is not a directory: test-output/logs/
+[ERROR] - [2025-04-07 11:24:43] [main] [Utils.AllureUtils]- Failed to attach log file to Allure report: Cannot invoke "java.io.File.exists()" because "logfile" is null
+[ERROR] - [2025-04-07 11:24:43] [main] [Utils.AllureUtils]- Failed to attach screenshot to Allure report: test-outputs\screenshots\TestExecution.png
