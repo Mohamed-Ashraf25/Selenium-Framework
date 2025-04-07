@@ -1,7 +1,6 @@
 package Utils;
 
 import Driver.DriverManager;
-import io.qameta.allure.Allure;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

@@ -13,20 +13,22 @@
         <maven.compiler.target>23</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+<!--<Plugins>-->
+<!--    <Plugin>-->
 
-    <!--    <plugin>-->
-    <!--        <groupId>org.apache.maven.plugins</groupId>-->
-    <!--        <artifactId>maven-surefire-plugin</artifactId>-->
-    <!--        <version>3.1.2</version>-->
-    <!--        <configuration>-->
-    <!--            <argLine>-->
-    <!--                -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar"-->
-    <!--            </argLine>-->
-    <!--        </configuration>-->
-    <!--        <dependencies>-->
+<!--            <groupId>org.apache.maven.plugins</groupId>-->
+<!--            <artifactId>maven-surefire-plugin</artifactId>-->
+<!--            <version>3.1.2</version>-->
+<!--            <configuration>-->
+<!--                <argLine>-->
+<!--                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar"-->
+<!--                </argLine>-->
+<!--            </configuration>-->
+<!--            <dependencies>-->
 
-    <!--        </dependencies>-->
-    <!--    </plugin>-->
+<!--            </dependencies>-->
+<!--        </Plugin>-->
+<!--</Plugins>-->
     <build>
         <directory>test-outputs/target</directory>
         <plugins>
@@ -108,12 +110,6 @@
             <version>2.18.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
-        <dependency>
-            <groupId>com.jayway.jsonpath</groupId>
-            <artifactId>json-path</artifactId>
-            <version>2.1.0</version>
-        </dependency>
         <!-- https://mvnrepository.com/artifact/org.json/json -->
         <dependency>
             <groupId>org.json</groupId>
@@ -124,6 +120,13 @@
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
             <version>1.1.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>2.9.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->

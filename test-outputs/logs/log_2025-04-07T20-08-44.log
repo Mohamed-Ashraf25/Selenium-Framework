@@ -1,0 +1,85 @@
+[INFO] - [2025-04-07 20:08:44] [main] [Listeners.TestngListener]- Test Execution started
+[INFO] - [2025-04-07 20:08:44] [main] [Utils.PropertiesUtils]- Properties loaded successfully from: [src\main\resources\allure.properties, src\main\resources\Environment.properties, src\main\resources\log4j2.properties, src\main\resources\web.properties]
+[INFO] - [2025-04-07 20:08:44] [main] [Listeners.TestngListener]- Properties loaded successfully
+[INFO] - [2025-04-07 20:08:44] [main] [Utils.FileUtils]- File deleted successfully: C:\Users\infop\IdeaProjects\SwagLab\test-outputs\allure-results\16d57e71-84b1-4d19-ac46-3168752c326d-container.json
+[INFO] - [2025-04-07 20:08:44] [main] [Utils.FileUtils]- File deleted successfully: C:\Users\infop\IdeaProjects\SwagLab\test-outputs\allure-results\79979f08-5ca9-4351-a65b-f435caa8bacf-container.json
+[INFO] - [2025-04-07 20:08:44] [main] [Utils.FileUtils]- File deleted successfully: C:\Users\infop\IdeaProjects\SwagLab\test-outputs\allure-results\9fad9a78-310d-4102-b614-0f7d76781d96-container.json
+[INFO] - [2025-04-07 20:08:44] [main] [Utils.FileUtils]- File deleted successfully: C:\Users\infop\IdeaProjects\SwagLab\test-outputs\allure-results\a59d5279-43d5-48fe-9759-048b4f25b033-attachment
+[INFO] - [2025-04-07 20:08:44] [main] [Utils.FileUtils]- File deleted successfully: C:\Users\infop\IdeaProjects\SwagLab\test-outputs\allure-results\c700f2c6-dfea-4641-ba46-598f2aac5d6b-attachment
+[INFO] - [2025-04-07 20:08:44] [main] [Utils.FileUtils]- File deleted successfully: C:\Users\infop\IdeaProjects\SwagLab\test-outputs\allure-results\dbe214a1-6f94-4e64-87b1-88d91ede1d2f-result.json
+[INFO] - [2025-04-07 20:08:44] [main] [Utils.FileUtils]- File deleted successfully: C:\Users\infop\IdeaProjects\SwagLab\test-outputs\logs\log_2025-04-07T20-06-05.log
+[ERROR] - [2025-04-07 20:08:44] [main] [Utils.FileUtils]- Error deleting file: test-outputs\logs\log_2025-04-07T20-08-44.log: The process cannot access the file because it is being used by another process
+[INFO] - [2025-04-07 20:08:44] [main] [Swaglabtest.E2E]- Browser launched successfully
+[ERROR] - [2025-04-07 20:08:44] [main] [Utils.JsonUtils]- Error in reading JSON file src\test\resources (Access is denied)
+[INFO] - [2025-04-07 20:08:51] [main] [Pages.loginPage]- Entering username: standard_user
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Waits]- Element is present: By.id: user-name
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Waits]- Element is visible: By.id: user-name
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Scrolling]- Scrolling down to element: By.id: user-name
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.ElementActions]- Data Entered: standard_user in element: By.id: user-name
+[INFO] - [2025-04-07 20:08:51] [main] [Pages.loginPage]- Entering password: secret_sauce
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Waits]- Element is present: By.id: password
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Waits]- Element is visible: By.id: password
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Scrolling]- Scrolling down to element: By.id: password
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.ElementActions]- Data Entered: secret_sauce in element: By.id: password
+[INFO] - [2025-04-07 20:08:51] [main] [Pages.loginPage]- Clicking on the login button
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Waits]- Element is present: By.id: login-button
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Waits]- Element is visible: By.id: login-button
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Waits]- Element is clickable: By.id: login-button
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Scrolling]- Scrolling down to element: By.id: login-button
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.ElementActions]- Clicked on element: By.id: login-button
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Waits]- Element is present: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Waits]- Element is visible: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Waits]- Element is clickable: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Scrolling]- Scrolling down to element: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.ElementActions]- Clicked on element: By.id: add-to-cart-sauce-labs-backpack
+[INFO] - [2025-04-07 20:08:51] [main] [Pages.HomePage]- Add to cart button clicked
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Waits]- Element is present: By.className: shopping_cart_badge
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Waits]- Element is visible: By.className: shopping_cart_badge
+[INFO] - [2025-04-07 20:08:51] [main] [Utils.Waits]- Element is clickable: By.className: shopping_cart_badge
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Scrolling]- Scrolling down to element: By.className: shopping_cart_badge
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.ElementActions]- Clicked on element: By.className: shopping_cart_badge
+[INFO] - [2025-04-07 20:08:52] [main] [Pages.HomePage]- Cart button clicked
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is present: By.id: checkout
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is visible: By.id: checkout
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is clickable: By.id: checkout
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Scrolling]- Scrolling down to element: By.id: checkout
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.ElementActions]- Clicked on element: By.id: checkout
+[INFO] - [2025-04-07 20:08:52] [main] [Pages.CartPage]- Checkout button clicked
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is present: By.id: first-name
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is visible: By.id: first-name
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Scrolling]- Scrolling down to element: By.id: first-name
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.ElementActions]- Data Entered: John in element: By.id: first-name
+[INFO] - [2025-04-07 20:08:52] [main] [Pages.CheckOutPage]- Entering Firstname: John
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is present: By.id: last-name
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is visible: By.id: last-name
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Scrolling]- Scrolling down to element: By.id: last-name
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.ElementActions]- Data Entered: Doe in element: By.id: last-name
+[INFO] - [2025-04-07 20:08:52] [main] [Pages.CheckOutPage]- Entering Lastname: Doe
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is present: By.id: postal-code
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is visible: By.id: postal-code
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Scrolling]- Scrolling down to element: By.id: postal-code
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.ElementActions]- Data Entered: 12345 in element: By.id: postal-code
+[INFO] - [2025-04-07 20:08:52] [main] [Pages.CheckOutPage]- Entering Postalcode: 12345
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is present: By.id: continue
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is visible: By.id: continue
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is clickable: By.id: continue
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Scrolling]- Scrolling down to element: By.id: continue
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.ElementActions]- Clicked on element: By.id: continue
+[INFO] - [2025-04-07 20:08:52] [main] [Pages.CheckOutPage]- Continue button clicked
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is present: By.id: finish
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is visible: By.id: finish
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is clickable: By.id: finish
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Scrolling]- Scrolling down to element: By.id: finish
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.ElementActions]- Clicked on element: By.id: finish
+[INFO] - [2025-04-07 20:08:52] [main] [Pages.CheckOut2Page]- Finish button clicked
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is present: By.id: back-to-products
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is visible: By.id: back-to-products
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Waits]- Element is clickable: By.id: back-to-products
+[INFO] - [2025-04-07 20:08:52] [main] [Utils.Scrolling]- Scrolling down to element: By.id: back-to-products
+[INFO] - [2025-04-07 20:08:53] [main] [Utils.ElementActions]- Clicked on element: By.id: back-to-products
+[INFO] - [2025-04-07 20:08:53] [main] [Pages.CheckOutCompletePage]- Back to Product : User Journey is Done successully
+[INFO] - [2025-04-07 20:08:53] [main] [Listeners.TestngListener]- Test is SuccessedSuccessfullLogin
+[ERROR] - [2025-04-07 20:08:53] [main] [Utils.AllureUtils]- Failed to attach screenshot to Allure report: test-outputs\screenshots
+[ERROR] - [2025-04-07 20:08:53] [main] [Utils.FileUtils]- Directory does not exist or is not a directory: test-output/logs/
+[ERROR] - [2025-04-07 20:08:53] [main] [Utils.AllureUtils]- Failed to attach log file to Allure report: Cannot invoke "java.io.File.exists()" because "logfile" is null
+[ERROR] - [2025-04-07 20:08:53] [main] [Utils.AllureUtils]- Failed to attach screenshot to Allure report: test-outputs\screenshots

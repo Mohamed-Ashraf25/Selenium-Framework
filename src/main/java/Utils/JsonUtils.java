@@ -1,11 +1,9 @@
 package Utils;
 
 import com.jayway.jsonpath.JsonPath;
-import net.minidev.json.parser.JSONParser;
 import org.json.JSONObject;
 
 import java.io.FileReader;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -18,20 +16,21 @@ public class JsonUtils {
         this.JsonFilename = jsonFilename;
 
     try {
-        JSONObject data = (JSONObject) new JSONParser().parse(new FileReader(JSON_PATH) + jsonFilename + ".json");
+        JSONObject data = (JSONObject) new org.json.simple.parser.JSONParser().parse(new FileReader(JSON_PATH) + jsonFilename + ".json");
         JsonReader = data.toString();
     } catch (Exception e) {
 
-        LogsUtils.Error( "Error in reading JSON file"+ e.getMessage());
+        LogsUtils.Error( "Error in reading JSON file "+ e.getMessage());
     }}
 
     public  String getJasonData(String jsonpath){
 
-        String testData = "";
-//        testData= JsonPath.read(JsonReader, jsonpath);
+        String testData = " ";
+
         try {
-            testData = JsonPath.read(Files.readString(Paths.get(JSON_PATH + JsonFilename + ".json")), jsonpath);
-        } catch (IOException e) {
+
+             testData = JsonPath.read(Files.readString(Paths.get(JSON_PATH + JsonFilename + ".json")), jsonpath);
+        } catch (Exception e) {
             LogsUtils.Error( "Error in reading JSON file"+ e.getMessage());
         }
         return testData;
